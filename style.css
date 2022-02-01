@@ -172,10 +172,11 @@
         z-index: 999;
     }
     .controls-visible label{
-        display: inline-block;
+        display: block;
         width: 10px;
         height: 10px;
-        background-color: #bbb;
+        /* background-color: rgb(255, 0, 0); */
+        background-color: transparent;
         border-radius: 50%;
         margin: 0px 3px;
         border: 2px solid #fff;
@@ -238,12 +239,111 @@
         border-radius: 10px;
     }
     main .index_hot_product{
-        height: 400px;
+      
+        height: 248px;
+        width: 100%;
+        /* background-image: url(./img/lswlbg.jpg); */
+        
+        
     }
 
-    main .index_product{
-        height: 400px;
+    main .index_hot_product .container{
+        
+        width:900px;
+        margin:0px auto;
+        height: 200px;
+        position: relative;
     }
+    main .index_hot_product .button-left,
+    main .index_hot_product .button-right{
+        width: 100px;
+        height: 100px;
+        /* background-color:  */
+        outline: 5px solid #2e70db;
+        position: absolute;
+        top:50px;
+        border-radius: 50%;
+    }
+    main .index_hot_product .button-left{
+        left: -130px;
+    }
+    main .index_hot_product .button-right{
+        right: -130px;
+    }
+    /* 产品分类 */
+    main .index_product{
+        width: 100%;
+        height: 480px;
+        outline: 12px;
+    }
+    main .index_product .container aside {
+        width: 20%;
+        height: 400px;
+        float: left;
+        background-color: #174897;
+        border-radius: 5px;
+    }
+    main .index_product .container aside ul{
+        
+    }
+    main .index_product .container aside ul li{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        color:white;
+        text-align: left;
+        padding-left: 40px;
+        box-sizing: border-box;
+        
+        
+    }
+    main .index_product .container aside ul li:nth-of-type(2n){
+        background-color: hsl(217, 70%, 42%);
+    }
+    main .index_product .container aside ul li:hover{
+        background-color:#00eeff;
+    }
+    main .index_product .container main{
+        width: 80%;
+        height: 380px;
+        margin:0px auto;
+        float: left;
+        
+    }
+    /* 商品样式 */
+    .product_container{
+        width: 160px;
+        height: 180px;
+        border-radius: 10px;
+        margin: 10px;
+        box-shadow: 0px 0px 3px #333;
+        background-color:#2e70db;
+        float: left;
+
+    }
+    .product_container:hover{
+        background-color: #00EEFF;
+    }
+    .product_container:hover span{
+        color: #333;
+    }
+    .product_container img{
+        width: 140px;
+        height: 130px;
+        border-radius: 5px;
+        margin: 10px 10px 0px 10px;
+        /* float: left; */
+    }
+    .product_container  span{
+        color: white;
+        display: block;
+        width: 160px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+
+    }
+  /* 选择我们 */
 
     main .select_us{
         
@@ -322,15 +422,15 @@
         box-sizing: border-box;
         padding-top: 10px;
         background: url(./img/index_about.jpg);
-        background-size: 1980px 500px;
+        background-size: 1000px 400px;
         opacity: 0.9;
         position: relative;
         overflow: hidden;
     }
     .index_about .title span{
         color: white;
-        background-color:#174897b7; 
-        border-radius: 10px;
+        background-color:rgba(23, 72, 151, 0.85); 
+        border-radius: 4px;
     }
     .index_about .container {
         width: 75%;
@@ -352,16 +452,20 @@
         width: 100%;
         height: 100%;
         border-radius: 4px;
-
+        box-shadow: 0px 0px 3px #333;
         
     }
 
     .index_about .container p{
         grid-row: 2/5;
         grid-column: 6/10;
-        background: #174897f5;
+        background-color:rgba(23, 72, 151, 0.95); 
         padding:20px;
         border-radius:4px;
+        font-size: 16px;
+        line-height: 20px;
+        /* font-style: oblique; */
+        font-variant: inherit;
     }
 
 
