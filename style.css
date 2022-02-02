@@ -278,9 +278,10 @@
     }
     main .index_product .container aside {
         width: 20%;
-        height: 400px;
+        height: 380px;
         float: left;
         background-color: #174897;
+        margin: 10px 0px 0px 0px;
         border-radius: 5px;
     }
     main .index_product .container aside ul{
