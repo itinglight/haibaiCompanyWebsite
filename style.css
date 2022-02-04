@@ -1,4 +1,9 @@
- /*媒体查询*/
+:root{
+   --main-color:#174897;
+}
+
+
+/*媒体查询*/
 /*当页面大于1200px 时，大屏幕，主要是PC 端*/
 *{
     margin: 0px;
@@ -72,7 +77,7 @@
         top: 0px;
         z-index: 99;
         height: 30px;
-        background-color: #174897;
+        background-color: var(--main-color);
     }
     nav ul{
       
@@ -188,7 +193,7 @@
     .controls-visible label:nth-of-type(2),
     main input[type="radio"]:nth-of-type(3):checked~
     .controls-visible label:nth-of-type(3){
-      background-color: #174897;
+      /* background-color: var(--main-color); */
     }
 
     /* 轮播图切换效果 */
@@ -258,6 +263,11 @@
     main .index_hot_product .button-right{
         width: 100px;
         height: 100px;
+        font-size: 100px;
+        line-height:100px;
+        text-align: center;
+       
+        color: #2e70db;
         /* background-color:  */
         outline: 5px solid #2e70db;
         position: absolute;
@@ -266,9 +276,15 @@
     }
     main .index_hot_product .button-left{
         left: -130px;
+        
     }
     main .index_hot_product .button-right{
         right: -130px;
+    }
+    main .index_hot_product .button-left:hover,
+    main .index_hot_product .button-right:hover{
+        color: yellowgreen;
+        outline: 5px solid yellowgreen;
     }
     /* 产品分类 */
     main .index_product{
@@ -356,7 +372,6 @@
         color: #666;
         text-align: center;
     }
-
   
     main .select_us .container{
         width: 100%;
@@ -365,11 +380,35 @@
         overflow: hidden;
     }
     main .select_us .container li{
+        display: block;
         width: 600px;
         height: 130px;
         margin:20px 20px;
         list-style: none;
         position: absolute;
+    }
+    main .select_us .container li img{
+        width: 300px;
+        height: 240px;
+        position: absolute;
+        
+       border-radius: 10px;
+    }
+    main .select_us .container li:nth-of-type(1) img{
+        top:0px;
+        left: 380px;
+    }
+    main .select_us .container li:nth-of-type(2) img{
+        top:-200px;
+        left: 700px;
+    }
+    main .select_us .container li:nth-of-type(3) img{
+        bottom: -100px;
+        left: -380px;
+    }
+    main .select_us .container li:nth-of-type(4) img{
+        bottom: 50px;
+        left: -700px;
     }
     main .select_us .container li:nth-of-type(1){
         top: 30px;
@@ -382,22 +421,28 @@
     main .select_us .container li:nth-of-type(3){
         bottom: 240px;
         right:  -15%;
+        /* left: 10%; */
     }
     main .select_us .container li:nth-of-type(4){
         bottom: 90px;
         right: -15%;
+        /* left: 10%; */
     }
     main .select_us  h2{
         height: 60px;
         /* width: 400px; */
     }
-
-    main .select_us ul li h2 i img{
+    main .select_us ul li h2 i{
+        color: #1296db;
+        float: left;
+        font-size: 60px;
+    }
+    /* main .select_us ul li h2 i img{
         display: block;
         width: 60px;
         height: 60px;
         float: left;
-    }
+    } */
     .select_us ul li h2 span{
         float: left;
         margin-left: 20px;
@@ -465,7 +510,7 @@
         border-radius:4px;
         font-size: 16px;
         line-height: 20px;
-        /* font-style: oblique; */
+        /* font-style: oblique; */ 
         font-variant: inherit;
     }
 
@@ -478,7 +523,7 @@
         height: 200px;
         position: relative;
         margin:0px auto;
-        background-color: #174897;
+        background-color: var(--main-color);
     }
     footer .box{
       
@@ -488,7 +533,7 @@
         box-sizing: border-box;
         margin:0px auto;
         padding-top: 20px;
-        background-color: #174897;
+        background-color: var(--main-color);
         /* box-shadow: 0px 0px 2px rgb(146, 146, 146); */
     }
     footer dl dt{
